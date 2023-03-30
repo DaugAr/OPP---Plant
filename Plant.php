@@ -9,14 +9,13 @@ class Plant
     public $continents;
     public $year;
 
-    function __construct($name = null, $latinName = null, $perennial = null, $height = null, $continents = null, $year = null)
+    function __construct($name = null, $latinName = null, $perennial = false, $height = 0, $continents = [], $year = 0)
     {
         $this->name = $name;
-        $this->$latinName = $latinName;
-        $this->$perennial = $perennial;
-        $this->$height = $height;
-        $this->$continents = $continents;
-        $this->$year = $year;
+        $this->latinName = $latinName;
+        $this->perennial = $perennial;
+        $this->height = $height;
+        $this->continents = $continents;
+        $this->year = $year;
     }
 }
-
