@@ -9,8 +9,7 @@ class Plant
     public $continents;
     public $year;
 
-    function __construct($name = null, $latinName = null, $perennial = false, $height = 0, $continents = [], $year = 0)
-    {
+    function __construct($name = "", $latinName = "", $perennial = false, $height = 0, $continents = [], $year = 0){
         $this->name = $name;
         $this->latinName = $latinName;
         $this->perennial = $perennial;
@@ -18,4 +17,5 @@ class Plant
         $this->continents = $continents;
         $this->year = $year;
     }
+
 }
